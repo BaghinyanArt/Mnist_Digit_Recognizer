@@ -28,7 +28,7 @@ class Net(nn.Module):
 
 # Load the saved model (make sure mnist_cnn.pth is in your project directory)
 model = Net()
-model.load_state_dict(torch.load("model\mnist_cnn.pth", map_location=torch.device('cpu')))
+model.load_state_dict(torch.load("mnist_cnn.pth", map_location=torch.device('cpu')))
 model.eval()
 
 # Tkinter settings: Create a window for drawing
