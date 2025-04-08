@@ -62,12 +62,3 @@ This will open a Tkinter window where you can draw digits and predict them using
 
 3.Clear: If you want to clear the canvas and draw again, click the "Clear" button.
 
-### License
-This project is open-source and available under the MIT License.
-
-```yaml
-
----
-
-This should give users everything they need to clone, set up, and run your project. Just make sure the model file `mnist_cnn.pth` is available for users to download or upload from their Colab environment, as it’s crucial for the application to work.
-```
