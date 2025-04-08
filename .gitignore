@@ -1,0 +1,21 @@
+# Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment
+venv/
+.env/
+
+# Ignore model weights
+*.pth
+
+# Ignore log and temp files
+*.log
+*.tmp
+
+# VS Code settings
+.vscode/
+
+# Ignore Jupyter notebook checkpoints
+.ipynb_checkpoints/
