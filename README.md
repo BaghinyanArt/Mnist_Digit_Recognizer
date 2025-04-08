@@ -36,7 +36,7 @@ cd Mnist_Digit_Recognizer
 This project requires Python dependencies to run. You can install them by using the following command:
 
 ```bash
-pip install torch numpy pillow
+pip install torch numpy pillow tinker
 ```
 ### Download the Model File
 You need the pre-trained model file mnist_cnn.pth. If you don't have it yet, you can download it from your Google Colab environment or any other source where you've saved it.
