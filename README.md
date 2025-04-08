@@ -39,13 +39,8 @@ This project requires Python dependencies to run. You can install them by using 
 pip install torch numpy pillow tinker
 ```
 ### Download the Model File
-You need the pre-trained model file mnist_cnn.pth. If you don't have it yet, you can download it from your Google Colab environment or any other source where you've saved it.
-Here’s how you can download it from Google Colab (if you're using Colab):
+You need just download this file mnist_cnn.pth and use it together with Draw_predict_CNN.py
 
-```python 
-from google.colab import files
-files.download('mnist_cnn.pth')
-```
 ### Running the Application
 To run the application, use the following command:
 
