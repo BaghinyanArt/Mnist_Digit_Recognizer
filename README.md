@@ -1,64 +1,76 @@
-# Mnist Digit Recognizer
+MNIST Digit Recognizer
+A handwritten digit recognition application built with TensorFlow and Tkinter that uses a Convolutional Neural Network (CNN) trained on the MNIST dataset to classify hand-drawn digits.
+Show Image
+Features
 
-A simple digit recognition application built with Python, Tkinter, and PyTorch. The app allows users to draw digits and predict them using a pre-trained Convolutional Neural Network (CNN) model on the MNIST dataset.
+Train a CNN model on the MNIST dataset
+Interactive GUI for drawing digits and getting real-time predictions
+Save and load trained models
+Simple and user-friendly interface
 
-## Features
+Requirements
 
-- **Draw Digits**: Users can draw digits on a canvas.
-- **Predict Digits**: The drawn digit is processed and predicted by a pre-trained CNN model.
-- **Easy-to-use GUI**: Built using Tkinter for a smooth user experience.
+Python 3.6+
+TensorFlow 2.x
+NumPy
+Matplotlib
+Tkinter (included in standard Python installation)
+PIL/Pillow
 
-## Technologies Used
+Installation
 
-- **Python**: The main programming language.
-- **Tkinter**: For building the graphical user interface (GUI).
-- **PyTorch**: For the Convolutional Neural Network (CNN) model.
-- **NumPy**: For array operations.
-- **Pillow (PIL)**: For image processing (e.g., resizing, inversion).
+Clone this repository:
 
-## Setup Instructions
-
-### Clone the Repository
-
-Clone the repository to your local machine:
-
-```bash
 git clone https://github.com/BaghinyanArt/Mnist_Digit_Recognizer.git
-```
-### Navigate into the project directory
-
-After cloning the repository, navigate into the project directory:
-
-```bash
 cd Mnist_Digit_Recognizer
-```
-### Install Dependencies
-This project requires Python dependencies to run. You can install them by using the following command:
 
-```bash
-pip install torch numpy pillow
-```
-### Download the Model File
-You need the pre-trained model file mnist_cnn.pth. If you don't have it yet, you can download it from your Google Colab environment or any other source where you've saved it.
-Here’s how you can download it from Google Colab (if you're using Colab):
+Install required packages:
 
-```python 
-from google.colab import files
-files.download('mnist_cnn.pth')
-```
-### Running the Application
-To run the application, use the following command:
+pip install tensorflow numpy matplotlib pillow
+Project Structure
 
-```bash
-python Draw_predict_CNN.py
-```
-This will open a Tkinter window where you can draw digits and predict them using the model.
+cnn_model.py: Contains the CNN model architecture
+train.py: Script for training the model on MNIST dataset
+gui.py: Tkinter-based GUI application for drawing digits and getting predictions
+utils.py: Utility functions for data processing and visualization
+saved_models/: Directory to store trained models
 
+Usage
+Training the Model
+Run the training script:
+python train.py
+You can modify training parameters in the script, including:
 
-### How to Use
-1.Draw on the Canvas: Use the mouse to draw a digit on the canvas.
+Number of epochs
+Batch size
+Learning rate
 
-2.Click "Predict": Once you finish drawing, click the "Predict" button to see the digit predicted by the model.
+Using the GUI
+Launch the digit recognition application:
+python gui.py
+Instructions:
 
-3.Clear: If you want to clear the canvas and draw again, click the "Clear" button.
+Draw a digit (0-9) on the canvas using your mouse
+The application will automatically predict the digit
+Use the "Clear" button to reset the canvas
 
+Model Details
+The CNN model architecture consists of:
+
+2 convolutional layers with max pooling
+Flatten layer
+Dense hidden layer with ReLU activation
+Output layer with softmax activation
+
+This architecture achieves approximately 99% accuracy on the MNIST test set.
+Future Improvements
+
+Add model evaluation metrics display
+Implement data augmentation for better training
+Add confidence scores for predictions
+Support for training on custom datasets
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+Contact
+For questions or feedback, please open an issue on this repository.
