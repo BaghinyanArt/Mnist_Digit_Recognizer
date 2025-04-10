@@ -36,7 +36,7 @@ cd Mnist_Digit_Recognizer
 This project requires Python dependencies to run. You can install them by using the following command:
 
 ```bash
-pip install torch numpy pillow tinker
+pip install torch numpy pillow tkinter
 ```
 ### Download the Model File
 You need just download this file mnist_cnn.pth and use it together with Draw_predict_CNN.py
